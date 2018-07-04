@@ -1,0 +1,30 @@
+body {
+ background-color:coral;
+}
+
+.eye {
+    height:400px;
+    display: block;
+    margin: 250px auto;
+}
+
+@keyframes moveEye {
+
+    0% { transform: translateY(-6px) translateX(-20px) scale(1.2);
+}
+    
+  30% {
+    transform: translateX(-30px) translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px) translateX(30px);
+  }
+  100% { 
+    transform: translateY(-6px) translateX(-20px) scale(1.2);
+
+  }
+}
+
+#pupil {
+    animation: moveEye 5s infinite; 
+}
